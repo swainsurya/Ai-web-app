@@ -54,7 +54,7 @@ let apiKey = "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"
 
 async function generation(data) {
     const response = await fetch(
-        "https://api-inference.huggingface.co/models/Shakker-Labs/FLUX.1-dev-LoRA-live-3D",
+        "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell",
         {
             headers: {
                 Authorization: `Bearer ${apiKey}`,

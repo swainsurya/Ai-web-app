@@ -12,7 +12,8 @@ let imageUrl = ""
 
 setTimeout(() => {
     randomBackgrounds();
-}, 2);
+    screen.orientation.lock();
+}, 0.3);
 
 // responsive sidebar
 

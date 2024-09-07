@@ -15,3 +15,7 @@ closeBtn.addEventListener("click",() => {
 sideIcon.addEventListener("click",() => {
     sidebar.classList.remove("hidden")
 }) ;
+
+setTimeout(() => {
+    screen.orientation.lock();
+}, 0.2);

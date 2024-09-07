@@ -4,7 +4,8 @@ let body = document.querySelector("body")
 
 setTimeout(() => {
     randomBackgrounds();
-}, 2);
+    screen.orientation.lock();
+}, 0.2);
 
 // Random backgrounds
 

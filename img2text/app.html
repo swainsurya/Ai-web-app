@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img to text</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../assets/logo.png" alt="">
+            <span class="logoTxt">Konark AI</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html" class="active">Home</a>
+            <ul class="subNav">
+                <a href="#" class="product">Products</a>
+                <ul class="subMenu">
+                    <li><a href="../text2img/app2.html">Text to Image</a></li>
+                    <li><a href="./app.html">Image to Text</a></li>
+                </ul>
+            </ul>    
+            <a href="#">Github</a>
+            <a href="#">About</a>
+        </nav>
+
+        <img class="sidebar-img" src="../assets/sidebar (1).png" alt="">
+    </header>
+    <!-- Sidebar for Responsive -->
+    <section class="sidebar hidden">
+        <button class="closeSidebar">❌</button>
+        <ul class="sideNav">
+            <li>
+                <img src="../assets/icons/home.png" loading="lazy" alt="">
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <img src="../assets/icons/products.png" loading="lazy" alt="">
+                <a href="../text2img/app2.html">Text to Image</a>
+            </li>
+            <li>
+                <img src="../assets/icons/products.png" loading="lazy" alt="">
+                <a href="./app.html">Image to Text</a>
+            </li>
+            <li>
+                <img src="../assets/icons/github.png" loading="lazy" alt="">
+                <a href="#">Github</a>
+            </li>
+            <li>
+                <img src="../assets/icons/about.png" loading="lazy" alt="">
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Main -->
+    <section class="container">
+        <p class="beta">Beta version</p>
+        <h3 class="textGenerated">Generate Prompt from Images</h3>
+        <label class="imgBox" for="inputFile">
+            <input type="file" accept="image/*" id="inputFile" hidden>
+            <div class="innerImg">
+                <img src="img.png" alt="">
+                <h2>Drag and drop or click here
+                    <br>to upload image
+                </h2>
+                <p>Upload any image from your device</p>
+            </div>
+        </label>
+        <button class="button_generate" role="button">GENERATE PROMPT</button>
+
+    </section>
+    <footer class="footer">&copy; Konark ai made with love ❤️</footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

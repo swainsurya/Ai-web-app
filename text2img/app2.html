@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./app2.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../assets/logo.png" alt="">
+            <span class="logoTxt">Konark AI</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <ul class="subNav">
+                <a href="#" class="product">Products</a>
+                <ul class="subMenu">
+                    <li><a href="./app2.html">Text to Image</a></li>
+                    <li><a href="../img2text/app.html">Image to Text</a></li>
+                </ul>
+            </ul>
+            <a href="#">Github</a>
+            <a href="#">About</a>
+        </nav>
+
+        <img class="sidebar-img" src="../assets/sidebar (1).png" alt="">
+    </header>
+
+    <!-- Sidebar for Responsive -->
+    <section class="sidebar hidden">
+        <button class="closeSidebar">❌</button>
+        <ul class="sideNav">
+            <li>
+                <img src="../assets/icons/home.png" loading="lazy" alt="">
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <img src="../assets/icons/products.png" loading="lazy" alt="">
+                <a href="./app2.html">Text to Image</a>
+            </li>
+            <li>
+                <img src="../assets/icons/products.png" loading="lazy" alt="">
+                <a href="../img2text/app.html">Image to Text</a>
+            </li>
+            <li>
+                <img src="../assets/icons/github.png" loading="lazy" alt="">
+                <a href="#">Github</a>
+            </li>
+            <li>
+                <img src="../assets/icons/about.png" loading="lazy" alt="">
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Main content -->
+
+    <section class="imgContainer">
+        <button class="downloadBtn hide" role="button">Download</button>
+        <div class="imgViewBox invisible">
+            <div class="generating">
+                <h2>Generating...</h2>
+                <img class="loading" src="../assets/loadings/generate.gif" alt="">
+            </div>
+            <img class="generateImg invisible" loading="lazy" />
+
+        </div>
+        <form class="inputBox">
+            <input class="input" type="text" placeholder="Write what to generate...">
+            <input class="submitBtn" type="submit" value="▶">
+        </form>
+    </section>
+    <footer>&copy; Konark ai made with love ❤️</footer>
+    <script src="app2.js"></script>
+</body>
+</html>

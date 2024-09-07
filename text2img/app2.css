@@ -1,0 +1,257 @@
+body {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgViewBox {
+    width: 450px;
+    height: 320px;
+    background: rgb(30, 30, 30);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.generateImg {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.generating {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    height: 200px;
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.generateImg:hover > .btnBox {
+    display: initial;
+}
+
+.inputBox {
+    margin-top: 5%;
+    height: 65px;
+    width: 600px;
+    position: relative;
+    background: rgb(205, 247, 207);
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px, rgb(0, 0, 0) 0px 2px 16px 0px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.input {
+    height: 100%;
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    outline: none;
+    padding: 0 15px;
+    color: black;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 5px solid transparent;
+}
+
+.inputBox:hover {
+  box-shadow: 0px 0px 15px blue;
+}
+
+.input::placeholder {
+    color: black;
+}
+
+.submitBtn {
+    position: absolute;
+    width: 8.5%;
+    height: 100%;
+    right: 0;
+    border: none;
+    background: transparent;
+    font-size: 1.6rem;
+    color: black;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/* CSS */
+.downloadBtn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.downloadBtn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.downloadBtn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+footer {
+  color: #ededed;
+  bottom: 1;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width : 700px) {
+  .inputBox {
+    width: 500px;
+    height: 55px;
+  }
+  .input {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width : 550px) {
+  .inputBox {
+    width: 400px;
+    height: 45px;
+    margin-top: 20%;
+  }
+  .input {
+    font-size: 1rem;
+  }
+  .imgViewBox {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  .inputBox {
+    width: 350px;
+    height: 45px;
+  }
+  .input {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .inputBox {
+    width: 300px;
+    height: 40px;
+  }
+  .input {
+    font-size: 0.765rem;
+  }
+  .imgViewBox {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width : 310px) {
+  .inputBox {
+    width: 250px;
+    height: 30px;
+  }
+  .input {
+    font-size: 0.765rem;
+  }
+  .imgViewBox {
+    width: 250px;
+    height: 250px;
+  }
+}

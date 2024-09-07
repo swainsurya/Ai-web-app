@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/logo.png" alt="">
+            <span class="logoTxt">Konark AI</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <ul class="subNav">
+                <a href="#" class="product">Products</a>
+                <ul class="subMenu">
+                    <li><a href="./text2img/app2.html">Text to Image</a></li>
+                    <li><a href="./img2text/app.html">Image to Text</a></li>
+                </ul>
+            </ul>
+            <a href="#">Github</a>
+            <a href="#">About</a>
+        </nav>
+
+        <img class="sidebar-img" src="./assets/sidebar (1).png" alt="">
+    </header>
+
+    <!-- Sidebar for Responsive -->
+    <section class="sidebar hidden">
+        <button class="closeSidebar">❌</button>
+        <ul class="sideNav">
+            <li>
+                <img src="./assets/icons/home.png" loading="lazy" alt="">
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <img src="./assets/icons/products.png" loading="lazy" alt="">
+                <a href="./text2img/app2.html">Text to Image</a>
+            </li>
+            <li>
+                <img src="./assets/icons/products.png" loading="lazy" alt="">
+                <a href="./img2text/app.html">Image to Text</a>
+            </li>
+            <li>
+                <img src="./assets/icons/github.png" loading="lazy" alt="">
+                <a href="#">Github</a>
+            </li>
+            <li>
+                <img src="./assets/icons/about.png" loading="lazy" alt="">
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Home content -->
+    <section class="home">
+        <div class="home-content">
+            <h1>Welcome to konark.ai</h1>
+            <h3>Make your imagination into image</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sapiente repudiandae ad dicta sed vitae
+                ut ipsum! Vero autem, natus soluta a aperiam, ab voluptatum quis possimus dolorem, itaque vel eius
+                placeat labore?</p>
+            <h2>Let's try Our Products</h2>
+            <div class="btn-box">
+                <a href="./text2img/app2.html">Text to image</a>
+                <a href ="./img2text/app.html">Image to text</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <span> &copy;konark.ai Made with love ❤️</span>
+        </footer>
+        <span class="home-imgHover"></span>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
